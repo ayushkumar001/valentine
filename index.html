@@ -71,6 +71,15 @@ button {
   from { transform: scale(0); opacity:1; }
   to { transform: scale(1.5) translate(var(--x), var(--y)); opacity:0; }
 }
+  .bouncy {
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
 </style>
 </head>
 
@@ -162,5 +171,6 @@ setInterval(()=>{
 
 </body>
 </html>
+
 
 
